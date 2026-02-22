@@ -1,13 +1,22 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Menu from "./menu";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+import Menu from "./menu.jsx";
+import OrderPage from "./orderPage.jsx";
 
 function App() {
   return (
     <BrowserRouter>
+      <nav style={{ display: "flex", gap: "15px", padding: "15px" }}>
+        <Link to="/menu">Menu</Link>
+        <Link to="/order">
+          <button>Order Now</button>
+        </Link>
+      </nav>
+
       <Routes>
         <Route path="/" element={<Menu />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/order" element={<OrderPage />} />
       </Routes>
     </BrowserRouter>
   );
