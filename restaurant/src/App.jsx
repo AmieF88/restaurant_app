@@ -4,10 +4,11 @@ import Menu from "./menu.jsx";
 import OrderPage from "./orderPage.jsx";
 import Chatbot from "./Chatbot";
 import Home from "./home.jsx";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav style={{ display: "flex", gap: "15px", padding: "15px" }}>
         <Link to="/"><button>Home</button></Link>
         <Link to="/menu"><button>Menu</button></Link>
@@ -25,7 +26,7 @@ function App() {
         <Route path="/order" element={<OrderPage />} />
         <Route path="/chat" element={<Chatbot />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
