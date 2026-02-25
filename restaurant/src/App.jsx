@@ -1,11 +1,10 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+
+import Home from "./Home.jsx";
 import Menu from "./Menu.jsx";
 import OrderPage from "./OrderPage.jsx";
-import Chatbot from "./Chatbot";
-import Home from "./Home.jsx";
-import { HashRouter } from "react-router-dom";
-
+import Chatbot from "./Chatbot.jsx";
 
 function App() {
   return (
@@ -13,12 +12,8 @@ function App() {
       <nav style={{ display: "flex", gap: "15px", padding: "15px" }}>
         <Link to="/"><button>Home</button></Link>
         <Link to="/menu"><button>Menu</button></Link>
-        <Link to="/order">
-          <button>Order Now</button>
-        </Link>
-        <Link to="/chat"><button>Chat</button>
-        </Link>
-
+        <Link to="/order"><button>Order Now</button></Link>
+        <Link to="/chat"><button>Chat</button></Link>
       </nav>
 
       <Routes>
