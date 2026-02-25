@@ -6,6 +6,7 @@ import Chatbot from "./Chatbot";
 import Home from "./Home.jsx";
 import { HashRouter } from "react-router-dom";
 
+
 function App() {
   return (
     <HashRouter>
