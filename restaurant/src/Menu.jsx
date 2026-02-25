@@ -44,7 +44,7 @@ export default function Menu() {
                 style={{ borderRadius: "10px" }}
               />
             ) : (
-              <p>No image available</p>
+              <p>No image available.</p>
             )}
           </div>
         ))
