@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Menu from "./Menu.jsx";
-import OrderPage from "./orderPage.jsx";
+import OrderPage from "./OrderPage.jsx";
 import Chatbot from "./Chatbot";
-import Home from "./home.jsx";
+import Home from "./Home.jsx";
 import { HashRouter } from "react-router-dom";
 
 function App() {
