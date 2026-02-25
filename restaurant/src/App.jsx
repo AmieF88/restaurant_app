@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import Menu from "./menu.jsx";
+import Menu from "./Menu.jsx";
 import OrderPage from "./orderPage.jsx";
 import Chatbot from "./Chatbot";
 import Home from "./home.jsx";
